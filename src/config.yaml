@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Tutored by Ruzaik
+  site: 'https://ruzaikrafeek.vercel.app'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Tutored by Ruzaik
+    template: '%s — Tutored by Ruzaik'
+  description: "\U0001F680 Professional online tutoring services in Computer Science, Programming, and more."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Tutored by Ruzaik
     images:
       - url: '~/assets/images/default.png'
         width: 1200
