@@ -1,5 +1,5 @@
 site:
-  name: Tutored by Ruzaik
+  name: Ruzaik Rafeek
   site: 'https://ruzaikrafeek.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Tutored by Ruzaik
-    template: '%s — Tutored by Ruzaik'
+    default: Ruzaik Rafeek
+    template: '%s — Ruzaik Rafeek'
   description: "\U0001F680 Professional online tutoring services in Computer Science, Programming, and more."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Tutored by Ruzaik
+    site_name: Ruzaik Rafeek
     images:
       - url: '~/assets/images/default.png'
         width: 1200

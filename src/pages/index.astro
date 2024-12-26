@@ -13,26 +13,24 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Master Programming Fundamentals with an Industry Expert',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
 
+  <!-- Hero Widget ******************* -->
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Book a Free Consultation',
+        href: '#',
+        icon: 'tabler:calendar',
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
       Master Programming Fundamentals with an <span class="text-accent dark:text-white highlight">Industry Expert</span>
@@ -40,95 +38,90 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Overwhelmed by the endless self-learning options? 
-        Try personalized tutoring from an industry professional passionate about teaching to accelerate your learning. 
-        My mission is to bridge the gap between what's taught in schools and what's needed for real-world software engineering jobs.
+        Overwhelmed by YouTube tutorials and dense textbooks? Get personalized, one-on-one guidance from a seasoned software engineer who’s passionate about teaching. I bridge the gap between what's taught in school and what's actually needed on the job, helping you build real-world coding skills and confidence.
       </span>
+    </Fragment>
+
+    <Fragment slot="media">
+      <div class="flex items-center justify-center h-full w-full max-w-3xl">
+        <video controls autoplay loop muted class="w-full rounded-lg shadow-lg">
+          <source src="assets/videos/hero.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
-
   <Note />
 
   <!-- Features Widget *************** -->
-
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Benefits"
+    title="Why Learn With Me?"
+    subtitle="Each session equips you with in-demand skills and industry insights."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+        title: 'One-on-One Attention',
+        description: 'No generic lectures—everything is tailored to your pace and interests.',
+        icon: 'tabler:user',
       },
       {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+        title: 'Practical, Real-World Examples',
+        description: 'Learn techniques actually used by professional developers, not just textbook theory.',
+        icon: 'tabler:device-desktop-analytics',
       },
       {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+        title: 'Hands-On Projects',
+        description: 'Build a portfolio as you learn, reinforcing concepts through real assignments.',
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+        title: 'Clear Explanations & Friendly Guidance',
+        description: 'Complex topics simplified, ensuring you truly understand before moving on.',
+        icon: 'tabler:info-circle',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+        title: 'Immediate Feedback',
+        description: 'Identify and correct mistakes early to develop solid coding habits.',
+        icon: 'tabler:messages',
       },
       {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+        title: 'Career-Focused Mentorship',
+        description: 'Get insights on best practices, interview prep, and what employers want.',
+        icon: 'tabler:briefcase',
       },
     ]}
   />
 
   <!-- Content Widget **************** -->
-
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="My Methodology"
+    title="A Proven Approach to Mastery"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+        title: 'Foundation First',
+        description: 'We solidify basic concepts before tackling advanced topics, ensuring a strong skill base.',
       },
       {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+        title: 'In-Demand Tools',
+        description: 'Focus on languages and frameworks that the industry currently values.',
       },
       {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+        title: 'Cross-Platform Skills',
+        description: 'Your knowledge won’t be limited—learn principles that adapt to various environments.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2070&q=80',
+      alt: 'Student focused image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Invest in Strong Foundations</h3>
+      When you start with the right fundamentals, you’re building skills that will pay off for years to come.
     </Fragment>
 
     <Fragment slot="bg">
@@ -137,36 +130,32 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
-
   <Content
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Personal Curriculum',
+        description: 'We define a roadmap based on your specific goals—acing a class, preparing for a bootcamp, or landing a junior dev job.',
       },
       {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+        title: 'Flexible Scheduling',
+        description: 'Sessions fit into your life, not the other way around.',
       },
       {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+        title: 'Online & Accessible',
+        description: 'Learn from anywhere with live, interactive sessions.',
       },
       {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+        title: 'Multimedia Resources',
+        description: 'Go beyond the sessions with curated readings, exercises, and video walkthroughs.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=2194&q=80',
+      alt: 'Customized learning image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Tailored learning paths for your unique goals.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -174,37 +163,33 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
-
   <Content
     isReversed
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+        title: 'Engaging Lessons',
+        description: 'Interactive examples and clear logic make coding less intimidating and more fun.',
       },
       {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+        title: 'Continuous Improvement',
+        description: 'I stay updated with tech trends so you’re always learning relevant skills.',
       },
       {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+        title: 'Time & Effort Saved',
+        description: 'Skip trial-and-error. Guided learning means you progress faster.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Community Support',
+        description: 'Join a network of learners and pros for ongoing advice and encouragement.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?auto=format&fit=crop&w=2070&q=80',
+      alt: 'Student success image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Become confident and independent in your coding journey.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -212,27 +197,26 @@ const metadata = {
   </Content>
 
   <!-- Steps Widget ****************** -->
-
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Start Your Coding Journey in Three Simple Steps"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Book a Free Consultation</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "We'll discuss your goals, current skill level, and schedule. No commitment—just a friendly chat to see if we’re a good fit.",
+        icon: 'tabler:calendar',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Get a Personalized Plan</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "I’ll craft a custom syllabus tailored to your needs, focusing on what matters most to you.",
+        icon: 'tabler:list-check',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Start Learning</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Begin your first session, build confidence, and watch your skills grow with consistent, guided practice.',
+        icon: 'tabler:school',
       },
       {
         title: 'Ready!',
@@ -240,67 +224,41 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?auto=format&fit=crop&w=987&q=80',
+      alt: 'Getting started image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
-
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Common Learning Tools"
+    subtitle="I integrate a variety of resources to enhance your learning."
+    tagline="Resources"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Live Interactive Sessions',
+        description: 'Real-time explanations, Q&A, and coding demos make sessions truly engaging.',
+        icon: 'tabler:video',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+        title: 'Recorded Lessons',
+        description: 'Revisit and review concepts anytime at your own pace.',
+        icon: 'tabler:player-play',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+        title: 'Hands-On Assignments',
+        description: 'Reinforce new concepts by putting them into immediate practice.',
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+        title: 'Regular Check-Ins',
+        description: 'Track progress, adjust the plan, and celebrate every milestone.',
+        icon: 'tabler:clock',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: 'Mentoring & Guidance',
+        description: 'Industry insights, career advice, and interview prep to help you stand out.',
+        icon: 'tabler:bulb',
       },
     ]}
   >
@@ -309,88 +267,79 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
-
+  <!-- BlogLatestPosts Widget ******* -->
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Stay Informed with Expert Tips & Insights"
+    information={`Check out my blog for industry trends, study strategies, and more. Each post helps you keep improving, even outside of our sessions.`}
   />
 
   <!-- FAQs Widget ******************* -->
-
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Clear answers to help you feel confident about working with me."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Why choose one-on-one tutoring?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Personalized guidance ensures faster progress than generic video tutorials. We focus on your goals, challenges, and learning style.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'Do I need prior coding experience?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Not at all! I work with absolute beginners as well as those refining advanced skills.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'What languages or technologies do you cover?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "We can focus on popular languages and frameworks that align with your goals—like JavaScript, Python, or modern web technologies.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'How are sessions conducted?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "All sessions are online, using video calls and screen-sharing for an interactive, hands-on experience.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'What if I need flexible scheduling?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "We’ll arrange sessions that fit your life, whether that's weekends, evenings, or other times.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Is there ongoing support?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "Yes! Between sessions, I'm available for quick questions and guidance as you practice.",
       },
     ]}
   />
 
   <!-- Stats Widget ****************** -->
-
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Students Mentored', amount: '50+' },
+      { title: 'Positive Feedback', amount: '95%' },
+      { title: 'Projects Built', amount: 'Dozens' },
+      { title: 'Guidance Hours', amount: 'Countless' },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
-
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Book a Free Consultation',
+        href: '#',
+        icon: 'tabler:calendar',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Ready to Level Up Your Coding Skills?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Don’t let confusion hold you back. Start your journey to becoming a confident, capable coder today.
     </Fragment>
   </CallToAction>
 </Layout>
